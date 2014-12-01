@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gumball Machine </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 align="center">Welcome to the Gumball Machine</h1>
+    <form name="Gumball" method="post" action="/gumball">
+    
+    <p>
+    <div align="center">
+    <textarea name="value" cols="50" rows="15">
+    
+    Model No : <%=gm[0]%>
+    Serial No: <%=gm[1]%>
+    State : <%=gm[2]%>
+    Number of Gumballs In Stock <%=gm[3]%>
+    
+    </textArea>
+    <input type="hidden" name="modelno" value=<%=gm[0]%>/>
+     <input type="hidden" name="serialno" value=<%=gm[1]%>/>
+    <input type="hidden" name="state" value=<%=gm[2]%> />
+    <input type="hidden" name="count" value=<%=gm[3]%>/>
+    
+    
+    </div>
+    </p>
+    <p align="center">
+    
+    <img src="/image/gumball.jpg" width="385" height="316" alt=""  >
+   
+    
+    
+    </p>
+    
+   
+    <input type="submit" name="event" value="InsertQuater"/>
+   </br>
+    <input type="submit" name="event" value="TurnTheCrank"/>
+    </form>
+  </body>
+</html>
